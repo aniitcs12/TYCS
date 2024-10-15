@@ -14,6 +14,7 @@
 
 </head>
 <body>
+
 <header>
     <a href="#" class="logo"><i class="fa-solid fa-utensils"></i> Blabber</a>
 
@@ -30,7 +31,9 @@
         <i href="#" class="fa-solid fa-bars" id="menu-bars"></i>
         <i href="#" class="fa-solid fa-magnifying-glass" id="search-icon"></i>
         <i href="#" class="fa-solid fa-heart"></i>
-        <a href="#" class="fa-solid fa-shopping-cart"></a>
+        <a href="#" class="fa-solid fa-shopping-cart" aria-hidden="false">
+            <span id="cart-count">0</span>
+        </a>
     </div>
 </header>     
 
@@ -48,37 +51,37 @@
 
             <div class="swiper-slide slide">
                 <div class="content">
-                    <span>our special dish</span>
-                    <h3>spicy noodles</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium modi praesentium?</p>
-                    <a href="#" class="btn">order now</a>
+                    <span>today's special</span>
+                    <h3>crispy chicken</h3>
+                    <p>serves 1 | medium spicy | classic crispy chicken,deep fried & coated with our secret flavours | dry | boneless</p>
+                    <a href="#order" class="btn">order now</a>
                 </div>
                 <div class="image">
-                    <img src="carbonara.jpg" alt="">
+                    <img src="asian-crispy-chicken_1056733-1741.avif" alt="">
                 </div>
             </div>
 
             <div class="swiper-slide slide">
                 <div class="content">
-                    <span>our special dish</span>
-                    <h3>fried chicken</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium modi praesentium?</p>
-                    <a href="#" class="btn">order now</a>
+                    <span>today's special</span>
+                    <h3>lobster thermidor</h3>
+                    <p>serves 1 | classic french dish with creamy mix of meat and brandy stuffed in lobster shell</p>
+                    <a href="#order" class="btn">order now</a>
                 </div>
                 <div class="image">
-                    <img src="carbonara.jpg" alt="">
+                    <img src="lobster.jpg" alt="">
                 </div>
             </div>
 
             <div class="swiper-slide slide">
                 <div class="content">
-                    <span>our special dish</span>
-                    <h3>hot pizza</h3>
+                    <span>today's special</span>
+                    <h3>Gourmet Fish</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium modi praesentium?</p>
-                    <a href="#" class="btn">order now</a>
+                    <a href="#order" class="btn">order now</a>
                 </div>
                 <div class="image">
-                    <img src="carbonara.jpg" alt="">
+                    <img src="fish.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -97,8 +100,8 @@
         <div class="box">
             <a href="#" class="fa-solid fa-heart"></a>
             <a href="#" class="fa-solid fa-eye"></a>
-            <img src="carbonara.jpg" alt="hello there">
-            <h3>tasty food</h3>
+            <img src="bowl-rice-with-chicken-rice_1028566-42786.avif" alt="hello there">
+            <h3>Chicken biryani</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -107,47 +110,15 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
             <span>$15.99</span>
-            <a href="#" class="btn">add to cart</a>
-        </div>
+            <a href="#" class="btn">Add to Cart</a>
 
-        <div class="box">
-            <a href="#" class="fa-solid fa-heart"></a>
-            <a href="#" class="fa-solid fa-eye"></a>
-            <img src="creamy-soup-with-parsley-garnish-white-bowl_191095-64801.avif" alt="hello there">
-            <h3>tasty food</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$15.99</span>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-        <div class="box">
-        <div>
-            <a href="#" class="fa-solid fa-heart"></a>
-            <a href="#" class="fa-solid fa-eye"></a>
-            <img src="carbonara.jpg" alt="hello there">
-            <h3>tasty food</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span>$15.99</span>
-            <a href="#" class="btn">add to cart</a>
         </div>
 
         <div class="box">
             <a href="#" class="fa-solid fa-heart"></a>
             <a href="#" class="fa-solid fa-eye"></a>
             <img src="plate-food-that-has-piece-food-it_787273-21441.avif" alt="hello there">
-            <h3>tasty food</h3>
+            <h3>crispy paneer</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -156,14 +127,15 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
             <span>$15.99</span>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn">Add to Cart</a>
+
         </div>
 
         <div class="box">
             <a href="#" class="fa-solid fa-heart"></a>
             <a href="#" class="fa-solid fa-eye"></a>
             <img src="plate-food-with-plate-food-it-plate-food-table_667286-676.jpg" alt="hello there">
-            <h3>tasty food</h3>
+            <h3>Grilled Fish</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -172,14 +144,15 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
             <span>$15.99</span>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" >Add to Cart</a>
+
         </div>
 
         <div class="box">
             <a href="#" class="fa-solid fa-heart"></a>
             <a href="#" class="fa-solid fa-eye"></a>
-            <img src="carbonara.jpg" alt="hello there">
-            <h3>tasty food</h3>
+            <img src="penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.avif" alt="hello there">
+            <h3>tomato penne pasta</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -188,15 +161,458 @@
                 <i class="fas fa-star-half-alt"></i>
             </div>
             <span>$15.99</span>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn">Add to Cart</a>
+
         </div>
     </div>
 </section>
+
+<section class="about" id="about">
+    <h3 class="sub-heading"> about us </h3>
+    <h1 class="heading"> why choose us? </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="blabber.avif" alt="">
+        </div>
+
+        <div class="content">
+            <h3>one of the best</h3>
+            <p>Blabber All Day is a multi-cuisine restaurant in Mumbai, India with locations in Borivali East and Juhu: 
+                Serves a variety of cuisines, including Chinese, North Indian, Italian, and more 
+                <br>Ambiance: Known for its cozy, modern, and elegant ambiance 
+                <br>Popular dishes: Some popular dishes include tiramisu, cheesecake, salmon sushi, basil fish, dumplings, and Kerala style chicken 
+                <br>Features: Offers fine dining, a cocktail bar, coffee shops, lounge bars, and vegan choices 
+                <br>Hours: Open until 1 AM 
+                <br>Reservations: You can make reservations by calling +91 9967768775 for Juhu or +91 8875409409 for Borivali 
+                <br>Accessibility: Has high chairs and is good for kids
+                <br>Some say the restaurant has a great ambiance, cozy seating, and friendly staff. Others say the service is excellent.</p>
+           
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>free delivery</span>
+                </div>
+
+                <div class="icons">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>easy payment</span>
+                </div>
+
+                <div class="icons">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 service</span>
+                </div>
+            </div>
+            <a href="https://magicpin.in/Mumbai/Borivali-East/Restaurant/Blabber-All-Day/store/67c498/?srsltid=AfmBOoqnqnGjJEj9TtoRpJ21M_mIRdvmpa3bMrcdfH8UxqLJ2k_K5oCG" class="btn1">learn more</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="menu" id="menu">
+
+    <h3 class="sub-heading"> our menu </h3>
+    <h1 class="heading"> speciality </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="specialmenu1.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Steak</h3>
+                <p>Tender and succulent,prime cut of beef, expertly grilled to perfection,accompanied by seasonal vegetables</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="pice">$56.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="specialmenu2.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Tuna Tartare</h3>
+                <p>Fresh, sushi-grade tuna finely diced and seasoned with a touch of sesame oil, soy sauce, and lime juice, served atop a bed of creamy avocado.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="pice">$88.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="specialmenu3.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Beef Tenderloin</h3>
+                <p>seared to perfection for a rich, juicy flavor. Served with a choice of savory sauces and seasonal vegetables</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="pice">$117.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="specialmenu4avif.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>salmon fillet</h3>
+                <p>expertly smoked to perfection, delivering a rich, smoky flavor. Served with a delicate dill cream sauce and accompanied by a side of lightly toasted bagel slices and capers</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="pice">$92.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="specialmenu5avif.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>stuffed bell peppers</h3>
+                <p> filled with a savory mixture of seasoned ground beef, rice, and fresh herbs, topped with melted cheese and baked to perfection</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="pice">$38.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="specialmenu7avif.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Burrata with Caviar and Roasted Heirlooms</h3>
+                <p>Creamy burrata cheese nestled beside sweet, oven-roasted heirloom tomatoes, drizzled with a balsamic reduction for a hint of acidity,topped with luxurious caviar.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="pice">$250.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="specialmenu8.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>steamed sea-bass with lotus seed</h3>
+                <p>served on a bed of fragrant lotus seeds and infused with ginger and scallions.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="pice">$75.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="specialmenu9.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>succulent shrimp</h3>
+                <p>coated in a light, crunchy batter and fried to golden perfection,served with a zesty dipping sauce</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="pice">$82.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="view-delicious-noodles-dish_23-2150777745.avif" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Black Squid Ink Pasta</h3>
+                <p>perfectly cooked to al dente and tossed in a rich, savory sauce infused with garlic, olive oil, and a hint of chili. Topped with succulent seafood and fresh herbs</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="pice">$120.99</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="review" id="review">
+
+    <h3 class="sub-heading"> customer's review </h3>
+    <h1 class="heading"> what they say </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="review1.avif" alt="">
+                    <div class="user-info">
+                        <h3>johanson lobo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>A good experience amidst the Mumbai chaos
+                    Peaceful and authentic vibe
+                    The service was not that satisfactory
+                    Although the food was good.. We tried the rose cheesecake and it was good</p>
+
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="review2.avif" alt="">
+                    <div class="user-info">
+                        <h3>Cristy Stallion</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lovely n lively ambience  service by Mr Amar  was superb n had a gr8 food taste experience n mocktail was yummmm</p>
+
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="review3.avif" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Blabber All Day has the best Jain Tomato Soup in town! I was looking specifically for Paleo diet options and was delighted to find this soup as an option. The flavour was spot-on and could perfectly spruce up my evening. Highly recommend for anyone looking for Paleo-friendly options.</p>
+
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="review4.avif" alt="">
+                    <div class="user-info">
+                        <h3>abigail lopez</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Loved the quality of service, ambience, cleanliness, taste, and price, promotions, & discounts at this place</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="order" id="order">
+
+    <h3 class="sub-heading"> order now </h3>
+    <h1 class="heading"> free and fast </h1>
+
+    <form id="orderForm" action="http://localhost:3000/submit-order" method="POST">
+
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text" required name="customerName" placeholder="enter your name">
+            </div>
+            <div class="input">
+                <span>your number</span>
+                <input type="text" required name="customerEmail" placeholder="enter your number ">
+            </div>
+        </div>
+
+        <div class="inputBox">
+            <div class="input">
+                <span>your address</span>
+                <textarea name="add" required placeholder="orderDetails" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <span>your message</span>
+                <textarea name="msg" required placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="order now" class="btn2">
+
+    </form>
+
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">India</a>
+            <a href="#">Japan</a>
+            <a href="#">Russia</a>
+            <a href="#">USA</a>
+            <a href="#">France</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">dishes</a>
+            <a href="#">about</a>
+            <a href="#">menu</a>
+            <a href="#">review</a>
+            <a href="#">order</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+919485729845</a>
+            <a href="#">+915610684328</a>
+            <a href="#">gdbfseu@gmail.com</a>
+            <a href="#">fejhfuiecfu@gmail.com</a>
+            <a href="#">+mumbai, india - 400100</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">linkedIn</a>
+        </div>
+
+    </div>
+
+    <div class="credit">copyright by @ <span>Anissa Fernandes</span></div>
+
+</section>
+
+<div class="loader-container">
+    <img src="carbonara.jpg" alt="">
+</div>
+
+<div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cart-count">0</span>
+ </div>
+
+
+
+
+    <script>
+        fetch('http://localhost:3000/data')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('data').innerText = JSON.stringify(data);
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+
+
 
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script> 
+<script>
+    fetch('db_connect.php')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        });
+    </script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+
 </body>
 </html>
